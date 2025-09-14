@@ -52,3 +52,6 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+/pdfcutter/.vs/pdfcutter/v17/*.suo
+/pdfcutter/.vs/ProjectEvaluation
+/pdfcutter/.vs/pdfcutter
