@@ -1,0 +1,40 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:pdfcutter.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="450"
+             x:Class="pdfcutter.Views.MainView"
+             x:DataType="vm:MainViewModel">
+  <Design.DataContext>
+    <!-- This only sets the DataContext for the previewer in an IDE,
+         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+    <vm:MainViewModel />
+  </Design.DataContext>
+    <StackPanel>
+    <Grid ColumnDefinitions="10*,70*,20*">
+      <Border Grid.Column="0" Margin="15">
+        <TextBlock Text="File"  />
+      </Border>
+      <Border Grid.Column="1" Background="LightBlue" Margin="15">
+        <TextBox Name="TextBoxFile" Text="{Binding SelectedFile}" IsEnabled="False"></TextBox>
+      </Border>
+      <Border Grid.Column="2" Margin="15">
+        <Button Name="ButtonSelectFile" Click="ButtonSelectFile_OnClick">Select file</Button>
+      </Border>
+    </Grid>
+    <Grid ColumnDefinitions="10*,70*,20*">
+        <Border Grid.Column="0" Margin="15">
+          <TextBlock Text="Formula"  />
+        </Border>
+        <Border Grid.Column="1" Background="LightBlue" Margin="15">
+          <TextBox Name="TextBoxFormula" Text="{Binding Formula}" Watermark="Example: 1-10;40"></TextBox>
+        </Border>
+        <Border Grid.Column="2" Margin="15">
+          <Button Name="ButtonSplit" Click="ButtonSplit_OnClick" >Split</Button>
+        </Border>
+     </Grid>
+    </StackPanel>
+  
+  
+</UserControl>
