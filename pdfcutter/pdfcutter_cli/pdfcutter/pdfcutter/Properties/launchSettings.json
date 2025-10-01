@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "pdfcutter": {
+      "commandName": "Project",
+      "commandLineArgs": "-f report.pdf -p 1,2"
+    }
+  }
+}

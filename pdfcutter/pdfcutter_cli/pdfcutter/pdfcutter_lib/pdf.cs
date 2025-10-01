@@ -48,13 +48,14 @@ namespace pdfcutter_lib
         public bool exportSelectedPages(string inputFile, string pages, string outputFile)
         {
             var path = inputFile;
+            var fullPath = System.IO.Path.GetFullPath(path);
 
-            if (!System.IO.File.Exists(path))
+            if (!System.IO.File.Exists(fullPath))
             {
                 return false;
             }
 
-            PdfDocument inputDocument = PdfReader.Open(path, PdfDocumentOpenMode.Import);
+            PdfDocument inputDocument = PdfReader.Open(fullPath, PdfDocumentOpenMode.Import);
             int pageCount = inputDocument.PageCount;
 
             pages = pages.Trim();
@@ -66,7 +67,6 @@ namespace pdfcutter_lib
             var pagesNeeded = this.getPagesFromString(pages);
             if (pagesNeeded.Length > pageCount)
             {
-                //MessageBox.Show($"Wrong number of pages expected! max: {pageCount}");
                 return false;
             }
 
