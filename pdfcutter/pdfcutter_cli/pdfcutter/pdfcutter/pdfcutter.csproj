@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="PDFsharp" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\pdfcutter_lib\pdfcutter_lib.csproj" />
   </ItemGroup>
 
