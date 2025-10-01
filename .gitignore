@@ -56,3 +56,5 @@ nunit-*.xml
 /pdfcutter/.vs/ProjectEvaluation
 /pdfcutter/.vs/pdfcutter
 /pdfcutter/pdfcutter.Desktop/publish/
+/pdfcutter/pdfcutter_cli/pdfcutter/.vs/pdfcutter
+/pdfcutter/pdfcutter_cli/pdfcutter/packages

@@ -10,10 +10,12 @@
 
     <PropertyGroup>
         <ApplicationManifest>app.manifest</ApplicationManifest>
+        <StartupObject>pdfcutter.Desktop.Program</StartupObject>
+        <PublishAot>True</PublishAot>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Avalonia.Desktop"/>
+        <PackageReference Include="Avalonia.Desktop" />
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
         <PackageReference Include="Avalonia.Diagnostics">
             <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
@@ -22,6 +24,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\pdfcutter\pdfcutter.csproj"/>
+        <ProjectReference Include="..\pdfcutter\pdfcutter.csproj" />
     </ItemGroup>
 </Project>

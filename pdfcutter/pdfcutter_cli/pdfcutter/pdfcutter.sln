@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pdfcutter", "pdfcutter\pdfcutter.csproj", "{F1AA5463-6436-4779-B105-50F0916C036B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pdfcutter_lib", "pdfcutter_lib\pdfcutter_lib.csproj", "{A795C0F9-E960-4283-A33D-6596BBB11551}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1AA5463-6436-4779-B105-50F0916C036B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1AA5463-6436-4779-B105-50F0916C036B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1AA5463-6436-4779-B105-50F0916C036B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1AA5463-6436-4779-B105-50F0916C036B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A795C0F9-E960-4283-A33D-6596BBB11551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A795C0F9-E960-4283-A33D-6596BBB11551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A795C0F9-E960-4283-A33D-6596BBB11551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A795C0F9-E960-4283-A33D-6596BBB11551}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D345368C-85FA-4BB8-A442-276E083BDB1C}
+	EndGlobalSection
+EndGlobal
