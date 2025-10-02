@@ -4,25 +4,37 @@ namespace pdfcutter
 {
     internal class Program
     {
+        static void printHelp()
+        {
+            Console.WriteLine("""
+                            Following arguments can be given
+                            -f = file name
+                            -p = pages string for example: 1-2,4,5,6-8
+                            
+                            """);
+        }
+
         static void Main(string[] args)
         {
             string fileName = string.Empty;
             string pages = string.Empty;
 
+            if (args.Length == 0)
+            {
+                Console.WriteLine("no arguments given");
+                printHelp();
+                return;
+            }
+
             // Process command line args
             try
             {
-                for (int i = 0; i < args.Length - 1; i++)
+                for (int i = 0; i <= args.Length-1; i++)
                 {
                     string arg = args[i];
-                    if (arg == "--help" || arg == "-h")
+                    if (arg.StartsWith("--help") || arg.StartsWith("-h"))
                     {
-                        Console.WriteLine("""
-                            
-                            -f = file name
-                            -p = pages string for example: 1-2,4,5,6-8
-                            
-                            """);
+                        printHelp();
                         return;
                     }
                     else if (arg == "-f")
